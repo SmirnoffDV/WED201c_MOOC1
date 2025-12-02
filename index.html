@@ -134,5 +134,17 @@
         <p>"iframe" tag is used to hook another page to the current page. It may look like this</p>
         <iframe src="page2.html" frameborder="1"></iframe>
         <hr>
+        <h2>This is the button section</h2>
+        <p>To make a button, we use the tag "button", the button would look like this</p>
+        <button>This is a button</button>
+        <p>You can add some color to it, and some script to make it does something when clicked. Here is an example</p>
+        <button onclick="changeText()" id="bt1">Click to change the text inside</button>
+        <script>
+            changeText = () => {
+                document.getElementById("bt1").innerHTML = "Hello there :D";
+            }
+        </script>
+        <p>There are much more things we can do, it will be introduce later on the JS module of this course.</p>
+        <hr>
     </body>
 </html>
