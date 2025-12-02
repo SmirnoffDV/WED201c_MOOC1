@@ -1,184 +1,196 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>This is my first website</h1>
-        <p>This website serves as learning materials while I'm learning web design.</p>
-        <hr>
-        <h2>This is the formating section</h2>
-        <p>There are many of it, including</p>
-        <ol>
-            <li><small>Small text</small></li>
-            <li><big>Big text</big></li>
-            <li><i>Italic</i></li>
-            <li><b>Bold</b></li>
-            <li><mark>Marked</mark></li>
-            <li><sub>Subscripted</sub></li>
-            <li>and more...</li>
-        </ol>
-        <p>Don't forget that we also have some amazing tag, like the break (br) tag</p>
-        <hr>
-        <h2>This is the hyperlink section</h2>
-        <p>This is a hyperlink => <a href="https://google.com/" target="_blank">Google</a></p>
-        <p>This also is a hyperlink => <a href="page2.html" target="_self">Page 2</a></p>
-        <p>It can be open in the same page or in a new page by using the "target" attribute</p>
-        <p>You can link an image, audio or a video using these following tag</p>
+
+<head>
+    <title>My Website</title>
+</head>
+
+<body>
+    <h1>This is my first website</h1>
+    <p>This website serves as learning materials while I'm learning web design.</p>
+    <hr>
+    <h2>This is the formating section</h2>
+    <p>There are many of it, including</p>
+    <ol>
+        <li><small>Small text</small></li>
+        <li><big>Big text</big></li>
+        <li><i>Italic</i></li>
+        <li><b>Bold</b></li>
+        <li><mark>Marked</mark></li>
+        <li><sub>Subscripted</sub></li>
+        <li>and more...</li>
+    </ol>
+    <p>Don't forget that we also have some amazing tag, like the break (br) tag</p>
+    <hr>
+    <h2>This is the hyperlink section</h2>
+    <p>This is a hyperlink => <a href="https://google.com/" target="_blank">Google</a></p>
+    <p>This also is a hyperlink => <a href="page2.html" target="_self">Page 2</a></p>
+    <p>It can be open in the same page or in a new page by using the "target" attribute</p>
+    <p>You can link an image, audio or a video using these following tag</p>
+    <ul>
+        <li>For images: img</li>
+        <li>For audio: audio</li>
+        <li>For video: video</li>
+    </ul>
+    <hr>
+    <h2>This is the link section</h2>
+    <p>There are three types of it</p>
+    <ul>
+        <li>The first one is <b>Unordered Link</b>, marked by the "ul" tag</li>
+        <li>The next one is <b>Ordered Link</b>, marked by the "ol" tag</li>
+        <li>The last one is <b>Description Link</b>, marked by the "dl" tag</li>
+    </ul>
+    <p>UL and OL share the same tag "li" to list its item, whereas DL uses "dt" for the title and "dd" for the desc of
+        each item in the list</p>
+    <hr>
+    <h2>This is the table section</h2>
+    <p>This is a simple table</p>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Nguyen</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Anh</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <p>You can add some attribute to it, this is the table after some modification</p>
+    <table border="2">
+        <tr bgcolor="lightgrey">
+            <th>STT</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>01</td>
+            <td>Nguyen</td>
+            <td>19</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>02</td>
+            <td>Anh</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>This is the color section</h2>
+    <p>Here is another table</p>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Number of Friends</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>NguyenHocWED</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Uoc10DiemWED</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <p>You can apply some color to the text. However, this is mostly done by the CSS, not the HTML. But here is an
+        simple example of how it look</p>
+    <table border="1">
+        <tr>
+            <th style="background-color: antiquewhite; color:rgb(53, 123, 123)">ID</th>
+            <th style="background-color: azure">Username</th>
+            <th style="background-color: rgb(20, 179, 179)">Number of Friends</th>
+        </tr>
+        <tr>
+            <td style="color: brown">01</td>
+            <td style="font-weight: bold">NguyenHocWED</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td style="color: brown">02</td>
+            <td style="font-weight: bold">Uoc10DiemWED</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <p>What you see is called <b>inline styling</b>. There are more than that but in this section we don't actually need
+        that much</p>
+    <hr>
+    <h2>This is the meta tag section</h2>
+    <p>This section will introduce you another tag in HTML: the "meta" tag.<br>It's used to define some data about data
+        for the web. It's always go inside the "head" element</p>
+    <p>There are some attribute of it</p>
+    <ul>
+        <li>charset: Specifies the character encoding for the HTML document</li>
+        <li>content: Uses to define the value for these following attributes</li>
         <ul>
-            <li>For images: img</li>
-            <li>For audio: audio</li>
-            <li>For video: video</li>
+            <li>http-equiv: Provides header for info/value of the <b>content</b> attribute</li>
+            <li>name: Specifies a name for the metadata</li>
         </ul>
-        <hr>
-        <h2>This is the link section</h2>
-        <p>There are three types of it</p>
-        <ul>
-            <li>The first one is <b>Unordered Link</b>, marked by the "ul" tag</li>
-            <li>The next one is <b>Ordered Link</b>, marked by the "ol" tag</li>
-            <li>The last one is <b>Description Link</b>, marked by the "dl" tag</li>
-        </ul>
-        <p>UL and OL share the same tag "li" to list its item, whereas DL uses "dt" for the title and "dd" for the desc of each item in the list</p>
-        <hr>
-        <h2>This is the table section</h2>
-        <p>This is a simple table</p>
-        <table>
-            <tr>
-                <th>STT</th>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Nguyen</td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>Anh</td>
-                <td>21</td>
-            </tr>
-        </table>
-        <p>You can add some attribute to it, this is the table after some modification</p>
-        <table border="2">
-            <tr bgcolor="lightgrey">
-                <th>STT</th>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr bgcolor="lightgrey">
-                <td>01</td>
-                <td>Nguyen</td>
-                <td>19</td>
-            </tr>
-            <tr bgcolor="lightgrey">
-                <td>02</td>
-                <td>Anh</td>
-                <td>21</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>This is the color section</h2>
-        <p>Here is another table</p>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Username</th>
-                <th>Number of Friends</th>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>NguyenHocWED</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>Uoc10DiemWED</td>
-                <td>14</td>
-            </tr>
-        </table>
-        <p>You can apply some color to the text. However, this is mostly done by the CSS, not the HTML. But here is an simple example of how it look</p>
-        <table border="1">
-            <tr>
-                <th style="background-color: antiquewhite; color:rgb(53, 123, 123)">ID</th>
-                <th style="background-color: azure">Username</th>
-                <th style="background-color: rgb(20, 179, 179)">Number of Friends</th>
-            </tr>
-            <tr>
-                <td style="color: brown">01</td>
-                <td style="font-weight: bold">NguyenHocWED</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td style="color: brown">02</td>
-                <td style="font-weight: bold">Uoc10DiemWED</td>
-                <td>14</td>
-            </tr>
-        </table>
-        <p>What you see is called <b>inline styling</b>. There are more than that but in this section we don't actually need that much</p>
-        <hr>
-        <h2>This is the meta tag section</h2>
-        <p>This section will introduce you another tag in HTML: the "meta" tag.<br>It's used to define some data about data for the web. It's always go inside the "head" element</p>
-        <p>There are some attribute of it</p>
-        <ul>
-            <li>charset: Specifies the character encoding for the HTML document</li>
-            <li>content: Uses to define the value for these following attributes</li>
-            <ul>
-                <li>http-equiv: Provides header for info/value of the <b>content</b> attribute</li>
-                <li>name: Specifies a name for the metadata</li>
-            </ul>
-        </ul>
-        <p>You can checkout <a href="page3.html" target="_self">this page</a> source code to know how it's used</p>
-        <hr>
-        <h2>This is the iframe section</h2>
-        <p>"iframe" tag is used to hook another page to the current page. It may look like this</p>
-        <iframe src="page2.html" frameborder="1"></iframe>
-        <hr>
-        <h2>This is the button section</h2>
-        <p>To make a button, we use the tag "button", the button would look like this</p>
-        <button>This is a button</button>
-        <p>You can add some color to it, and some script to make it does something when clicked. Here is an example</p>
-        <button onclick="changeText()" id="bt1">Click to change the text inside</button>
-        <script>
-            changeText = () => {
-                document.getElementById("bt1").innerHTML = "Hello there :D";
-            }
-        </script>
-        <p>There are much more things we can do, it will be introduce later on the JS module of this course.</p>
-        <hr>
-        <h2>This is the form section</h2>
-        <p>You can create a form in HTML by using the "form" tag. Here is what a simple form look like</p>
-        <form>
-            <h4>This is a simple form</h3>
-                <div>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter your first name here">
-                </div>
-                <div>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Enter your last name here">
-                </div>
-                <div>
-                    <label for="birthday">Birthday</label>
-                    <input type="date" id="birthday" name="birthday">
-                </div>
-                <div>
-                    <label for="major">Major</label>
-                    <select name="major" id="major">
-                        <option value="other">Other</option>
-                        <option value="SE">Software Engineering</option>
-                        <option value="AI">Artificial Intelligence</option>
-                        <option value="IA">Information Assurance</option>
-                        <option value="CS">Computer Science</option>
-                    </select>
-                </div>
-                <input type="submit">
-                <input type="reset">
-                <p>There are many attributes you can try out. You can find some useful knowledge from W3Schools lesson about form <a href="https://www.w3schools.com/html/html_forms.asp">here</a></p>
-                <hr>
-                <h2>Ending</h2>
-                <p>There are many useful and important tags that I don't mention. However, you can find it at W3Schools HTML Course, it's free, and it's good. Check it out <a href="https://www.w3schools.com/html/default.asp" target="_blank">here</a></p>
-                <p>If you have any question or issue to discuss, feel free to ask me via <a href="mailto:contact.nguyensynguyen@gmail.com">Gmail</a> or open an issue directly on my GitHub Repository for this page <a href="https://github.com/SmirnoffDV/WED201c_MOOC1/issues/new">here</a></p>
-        </form>
-    </body>
+    </ul>
+    <p>You can checkout <a href="page3.html" target="_self">this page</a> source code to know how it's used</p>
+    <hr>
+    <h2>This is the iframe section</h2>
+    <p>"iframe" tag is used to hook another page to the current page. It may look like this</p>
+    <iframe src="page2.html" frameborder="1"></iframe>
+    <hr>
+    <h2>This is the button section</h2>
+    <p>To make a button, we use the tag "button", the button would look like this</p>
+    <button>This is a button</button>
+    <p>You can add some color to it, and some script to make it does something when clicked. Here is an example</p>
+    <button onclick="changeText()" id="bt1">Click to change the text inside</button>
+    <script>
+        changeText = () => {
+            document.getElementById("bt1").innerHTML = "Hello there :D";
+        }
+    </script>
+    <p>There are much more things we can do, it will be introduce later on the JS module of this course.</p>
+    <hr>
+    <h2>This is the form section</h2>
+    <p>You can create a form in HTML by using the "form" tag. Here is what a simple form look like</p>
+    <form>
+        <h4>This is a simple form</h3>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name here">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name here">
+            </div>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <div>
+                <label for="major">Major</label>
+                <select name="major" id="major">
+                    <option value="other">Other</option>
+                    <option value="SE">Software Engineering</option>
+                    <option value="AI">Artificial Intelligence</option>
+                    <option value="IA">Information Assurance</option>
+                    <option value="CS">Computer Science</option>
+                </select>
+            </div>
+            <input type="submit">
+            <input type="reset">
+            <p>There are many attributes you can try out. You can find some useful knowledge from W3Schools lesson about
+                form <a href="https://www.w3schools.com/html/html_forms.asp">here</a></p>
+            <hr>
+            <h2>Ending</h2>
+            <p>There are many useful and important tags that I don't mention. However, you can find it at W3Schools HTML
+                Course, it's free, and it's good. Check it out <a href="https://www.w3schools.com/html/default.asp"
+                    target="_blank">here</a></p>
+            <p>If you have any question or issue to discuss, feel free to ask me via <a
+                    href="mailto:contact.nguyensynguyen@gmail.com">Gmail</a> or open an issue directly on my GitHub
+                Repository for this page <a href="https://github.com/SmirnoffDV/WED201c_MOOC1/issues/new">here</a></p>
+    </form>
+</body>
+
 </html>
